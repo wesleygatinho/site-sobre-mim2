@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Folha de estilo de CSS Linkado -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,82 +19,249 @@
 <body>    
 
     <!-- Sessão de Menu  -->
-    
+    <div class="all">
     <section class="menu">
         <header>
-            <nav>
-                <ul class="menu__list">
-                    
-                    <h3 class="menu__title">
-                        <img class="img__casa" src="/assets/casa.png" alt="">
-                        <a href="/index.html" class="active">Home</a>
-                        
-                    </h3>
-                        
-                    
-                    
-                    
-                    <h3 class="menu__title">
-                        <img class="img__casa" src="/assets/habi2.png" alt="">
-                        <a href="/html/habilidades.html">Habilidades</a>
-                    </h3>
-                    
-                    <h3 class="menu__title">
-                        <img class="img__casa" src="/assets/cora.png" alt="">
-                        <a href="/html/projetos.html">Projetos</a>
-                    </h3>
-                    
-                </ul>
-            </nav>
-            
+            <img src="assets\vector.png">
+            <h3 class="menu__title">Wesley Santos</h3>
         </header>
-        
+        <nav>
+            <ul class="menu__list">
+                <li class="menu__list__item"><a href="#sobremim" class="active">Sobre mim</a></li>
+                <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                <li class="menu__list__item"><a href="#formacao">Formações e Cursos</a></li>
+                <li class="menu__list__item"><a href="#xp">Projetos</a></li>
+                <li class="menu__list__item__contato"><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </section>
 
+<!--Sessão dark Mode-->
 
+    <section class="dark">
+        <div class="btn-dark-mode">  
+            <label class="btn-dark-mode" for="switch">
+                <input type="checkbox" class="checkbox" id="switch">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </section>
 
-<!-- Sessão Home -->
+<!-- Sessão de Header/Title/Hero -->
     <section class="title">
-        <div class="title__div" id="home">
-            <img class="title__profile" src="/assets\lindo.jpg">
+        <div class="title__div">
+            <img class="title__profile" src="assets\lindo.jpg">
             <div class="title__container" id="#sobremim">
-                <h2 class="title__bio" id="nome-autor"></h2>
-                <h3 class="title__subsection">Estudante de Engenharia de computação na Universidade Federal do Maranhão.
-                    Atualmente participando no projeto Oracle ONE e Programa Trilhas do Estado do Maranhão na Alura.</h3>
-                <div class="apresentacao__links">
-                    <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
-                        <a class="apresentacao__links__link" href="https://GitHub.com/wesleygatinho">
-                            <img src="/assets/Vector.png" alt="Icone GitHub">
-                            GitHub
-                        </a>
-                        <a class="apresentacao__links__link" href="https://www.linkedin.com/in/wesley-dos-santos-gatinho-85318a164/">
-                            <img src="/assets/linkdin.png" alt="Icone linkedin">
-                            Linkedin
-                        </a>
-                        <a class="apresentacao__links__link" href="https://GitHub.com/wesleygatinho">
-                            <img src="/assets/Vector.png" alt="Icone twitch">
-                            Instagram
-                        </a>
-                </div>
+                <h2 class="title__bio">Olá, sou Wesley e sou desenvolvedor front-end.</h2>
+                <h3 class="title__subsection">Estudando Engenharia de computação e atualmente estou participando no projeto Oracle ONE e Programa Trilhas do Estado do Maranhão na Alura.</h3>
+                <ul class="title__network">
+                    <li class="title__network__item"><a href="https://github.com/wesleygatinho"  target="_blank">Github <img src="assets\arrow.png"> </a></li>
+                    <li class="title__network__item"><a href="https://www.linkedin.com/in/wesley-dos-santos-gatinho"  target="_blank">Linkedin <img src="assets\arrow.png"></a></li>
+                    <li class="title__network__item"><a href="https://instagram.com/euwesleyz" target="_blank">Instagram <img src="assets\arrow.png"></a></li>
+                </ul>
             </div>
         </div>
     </section>
 
-        
-
-
-    
-        
-        <!-- Sessão de Footer/Rodapé-->
-    <section class="footer">
-        <div class="footer__rodape">
-            <p>Desenvolvido por Wesley S</p>
-            <p>2024</p>
+        <!-- Sessão sobre mim -->
+    <section class="about">
+        <div class="about__container">
+            <h3 class="about__title">Sobre mim</h3>
+            <p class="about__paragraph">Sou um profissional de TI com experiência em suporte de TI e possuo conhecimento em HTML, CSS e JavaScript.</p>
+            
+            <img src="assets\signature.png">
         </div>
     </section>
-    
+
+<!-- Sessão de Skills/Habilidades -->
+    <section class="skills">
+        <h3 class="skills__title" id="skills">Skills</h3>
+            <div class="skills__line">
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img src="assets\htlm.png"></li>
+                        <li class="skills__name">Html 5</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
+                        <li class="skills__name">CSS</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
+                        <li class="skills__name">Javascript</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
+                        <li class="skills__name">Node JS</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img src="assets/react_icon.png" alt=""></li>
+                        <li class="skills__name">React</li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+
+<!-- Sessão de Hobbies -->
+    <section class="hobbies" id="hobbies">
+        <h3 class="hobbies__title">Hobbies</h3>
+            <div class="hobbies__line">
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
+                        <li class="hobbies__name">Skate</li>
+                    </ul>
+                </div>
+
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
+                        <li class="hobbies__name">Ouvir música</li>
+                    </ul>
+                </div>
+
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
+                        <li class="hobbies__name">Assistir séries</li>
+                    </ul>
+                </div>
+
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
+                        <li class="hobbies__name">Comer</li>
+                    </ul>
+                </div>
+
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""> </li>
+                        <li class="hobbies__name">Tocar</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+
+    <!-- Sessão de Histórico Acadêmico -->
+    <section class="academic">
+        <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
+        <div class="academic__courses">
+            <div class="academic__courses__box">
+                <ul class="academic__courses__list">
+                    <li class="academic__courses__item__img"><img src="assets/image.png"></li>
+                    <li class="academic__courses__item__title"><h4>Estudando Engenharia da Computação</h4></li>
+                    <li class="academic__courses__item__subtitle"><p>2024 - UFMA</p></li>
+                </ul>
+            </div>
+            <div class="academic__courses__box">
+                <ul class="academic__courses__list">
+                    <li class="academic__courses__item__img"><img src="assets/ifma.png"></li>
+                    <li class="academic__courses__item__title"><h4>Desenvolvimento de Jogos</h4></li>
+                    <li class="academic__courses__item__subtitle"><p>2021 - IFMA</p></li>
+                </ul>
+            </div>
+            <div class="academic__courses__box">
+                <ul class="academic__courses__list">
+                    <li class="academic__courses__item__img"><img src="assets/ALURA.png"></li>
+                    <li class="academic__courses__item__title"><h4>Formação em FrontEnd e BackEnd</h4></li>
+                    <li class="academic__courses__item__subtitle"><p>Em andamento - Alura</p></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sessão de Projetos -->
+    <section class="experience">
+        <h2 class="experience__section__title" id="xp">Projetos</h2>
+        <div class="experiencie__box">
+            <img class="experience__img" src="assets/alura_pay.png">
+            <div class="experience__info">
+                <h2 class="experience__title">Página de Vídeos</h2>
+                <!-- <h3 class="experience__text"></h3> -->
+                <h4 class="experience__logo__linguage"><img src="assets/htlm.png" alt=""><img src="assets/css_icon.png" alt=""></h4>
+                    <div class="experience__description">
+                            <span class="experience__repo"><a href="https://github.com/wesleygatinho/plataforma-videos/tree/main/aluraplay-projeto-base" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="https://plataforma-videos-yv5i.vercel.app/" target="_blank"><button class="experiencia__botao--demo">Ver demo</button></a></span>
+                    </div>
+            </div>
+        </div>   
+
+        <div class="experiencie__box">
+            <img class="experience__img" src="assets/jogo_secreto.png">
+            <div class="experience__info">
+            <h2 class="experience__title">Jogo do número secreto</h2>
+                <h3 class="experience__text">Challenge Oracle </h3>
+                <h4 class="experience__logo__linguage"><img src="assets/htlm.png" alt=""><img src="assets/css_icon.png" alt=""><img src="assets/js_icon.png" alt=""></h4>
+                    <div class="experience__description">
+                            <span class="experience__repo"><a href="https://github.com/wesleygatinho/jogo-do-numero-secreto" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="https://jogo-ten-tan.vercel.app" target="_blank"><button class="experiencia__botao--demo">Ver demo</button></a></span>
+                    </div>
+            </div>
+        </div>  
+
+        <!-- <div class="experiencie__box">
+            <img class="experience__img" src="assets/jogo-num-sec.png">
+            <div class="experience__info">
+            <h2 class="experience__title">Landing Page Petshop</h2>
+                <h3 class="experience__text">Projeto pessoal</h3>
+                <h4><img src="assets/htlm.png" alt=""><img src="assets/css_icon.png" alt=""></h4>
+                    <div class="experience__description">
+                            <span class="experience__repo"><a href="https://github.com/alinevianna/jogo-numero-secreto" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="https://jogo-numero-secreto-ten-blush.vercel.app" target="_blank"><button class="experiencia__botao--demo">Ver demo</button></a></span>
+                    </div>
+            </div>
+        </div>  -->
+
+    </section>
+        <!-- Sessão de Contato -->
+        <section class="formcontato">
+            <div id="contato" class="formcontato__contato">
+                <div class="formcontato--esquerda">
+                    <img class="formcontato__img" src="assets/contact_image.png">
+                </div>
+                <div class="formcontato__text">
+                    <h2 class="formcontato__title">Contato</h2>
+                    <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
+                    <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
+                    <form action="https://api.sheetmonkey.io/form/rKUrmkSXdfNUp23FNZ9FBK" method="post" class="formcontato__form">
+                        <input class="formcontato__input required" type="text" name="nome"id="nome" placeholder="Nome">
+                        <span class="span-required">Nome deve ter no mínimo 3 caracteres.</span>
+                        <input class="formcontato__input required" type="email" name="email" id="email" placeholder="Email">
+                        <span class="span-required">Digite um email válido.</span>
+                        <input class="formcontato__input required" type="text" name="assunto" id="assunto" placeholder="Assunto">
+                        <span class="span-required">Digite uma mensagem válida.</span>
+                        <textarea class="formcontato__textarea required" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+                        <button type="submit" class="formcontato__botao">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sessão de Footer/Rodapé-->
+        <section class="footer">
+            <div class="footer__rodape">
+                <p>Desenvolvido por Wesley S</p>
+                <p>2024</p>
+            </div>
+        </section>
+    </div>
     <!-- Script Linkado do seu documento de JavaScript -->
-<script src="/js/validate.js"></script>
+<script src="validate.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
