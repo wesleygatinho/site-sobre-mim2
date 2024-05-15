@@ -1,32 +1,22 @@
-//Seu JavaScript de validação aqui
-var texto = "Wesley Gatinho";
-var atraso = 200;
-var textoElemento = document.querySelector(".title__bio");
 
-
-var contadorDeLetras = 0;
-function escreverTexto() {
-  if (contadorDeLetras < texto.length) {
-    textoElemento.textContent += texto.charAt(contadorDeLetras);
-    contadorDeLetras++;
-    setTimeout(escreverTexto, atraso);
-  }
-}
-
-escreverTexto();
-
-
+// <!-- Menu Hambuguer - Tela Mobile  -->
 function animar()  {
   const btn = document.getElementById('btn-menu');
   btn.classList.toggle('ativar');
 
 }
 
+
+// <!-- Esconder e Ativar Menu - Tela Mobile  -->
 const btnMenu = document.getElementById('btn-menu');
 const menuList = document.querySelector('.menu__list');
-let btnClicado = false;
 
-btnMenu.addEventListener('click', function(){
-  btnClicado ? menuList.classList.add('invisivel') : menuList.classList.remove('invisivel')
+let btnClicado = false;
+if(btnClicado){
+  alert('clicado');
+}
+btnMenu.addEventListener('click', () =>{
+  btnClicado ? menuList.classList.add('invisivel') : menuList.classList.remove('invisivel');
   btnClicado = !btnClicado;
+  
 });
