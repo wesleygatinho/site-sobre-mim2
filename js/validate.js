@@ -16,3 +16,17 @@ function escreverTexto() {
 escreverTexto();
 
 
+function animar()  {
+  const btn = document.getElementById('btn-menu');
+  btn.classList.toggle('ativar');
+
+}
+
+const btnMenu = document.getElementById('btn-menu');
+const menuList = document.querySelector('.menu__list');
+let btnClicado = false;
+
+btnMenu.addEventListener('click', function(){
+  btnClicado ? menuList.classList.add('invisivel') : menuList.classList.remove('invisivel')
+  btnClicado = !btnClicado;
+});
