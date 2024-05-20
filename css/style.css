@@ -1,3 +1,4 @@
+
 :root{
     --cor-de-fundo: #403d3d;
     --cor-secundaria: #191818;
@@ -62,7 +63,7 @@ section.menu{
      
 }
  
- /* Underline animação */
+
 nav a {
      display: block;
      position: relative;
@@ -98,9 +99,7 @@ nav a:hover::after,
 
 
  
- /*Sessão home*/
- 
- 
+ /*SESSÃO HOME*/
 
 .menu__title {
     display: flex;
@@ -129,6 +128,7 @@ nav a:hover::after,
 .title__profile {
      border-radius: 100%;
      width: 40%;
+     box-shadow: 5px 5px 5px -1px #FF577F;
 }
  
 .title__container {
@@ -145,6 +145,7 @@ nav a:hover::after,
 .title__subsection{
      font-size: 1.4rem;
      color: #ffffff;
+     text-align: justify;
 }
  
 .title__network{
@@ -208,7 +209,7 @@ nav a:hover::after,
       }
 }
  
- /* Underline animação */
+
 .title__network a {
      display: block;
      position: relative;
@@ -223,7 +224,7 @@ nav a:hover::after,
 
 
  
- /*Sessão Habilidades*/
+ /*SESSÃO HABILIDADES*/
  
 section.about{ 
     height: 50vh;
@@ -259,6 +260,7 @@ section.about{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    text-align: justify;
 }
  
 .titulo-destaque {
@@ -268,12 +270,10 @@ section.about{
 .apresentacao__imagem {
     width: 50%;
 }
+
+
  
- 
-
-
-
- /* Meus projetos*/
+/* SESSÃO MEUS PROJETOS */
  
 section.experience{
      padding: 20px 5%;
@@ -367,7 +367,7 @@ width: 30%;
  
  
  
- /*footeer*/
+ /*RODAPÉ PÁGINA*/
  
 section.footer{
     text-align: center;
@@ -388,7 +388,7 @@ section.footer{
     
 }
  
- /* <!-- Tablet--> */
+ /* <!-- Menu Tablet--> */
  
 @media (max-width: 1250px) {
  
@@ -422,10 +422,6 @@ section.footer{
          justify-content: space-around;
          align-items: center;
      }
-
-    /* #btn-menu{
-        display: none;
-    } */
  
      /*Sessão Habilidades*/
      
@@ -470,12 +466,10 @@ section.footer{
          width: 70%;
      }
  
-     
- 
-     /*Footer*/
- 
  }
  
+
+/* <!-- Menu Mobile--> */ 
 @media screen and (max-width: 650px) {
 
     
@@ -568,7 +562,7 @@ section.footer{
  
      
  
-         /*Meus Projetos*/
+    /*Meus Projetos*/
  
      .experiencie__box {
          flex-direction: column;
