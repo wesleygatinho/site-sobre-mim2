@@ -186,10 +186,6 @@ nav a:hover::after,
     font-family: var(--fonte-secundaria);
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> fe24ac125a6a71f65feef3a3fd7277fbab5e7242
 .apresentacao__links__link:hover {
     background-color: #594b4d;
 }
@@ -596,8 +592,6 @@ section.footer{
         display: none;
     }
  
-<<<<<<< HEAD
+
  }
-=======
- }
->>>>>>> fe24ac125a6a71f65feef3a3fd7277fbab5e7242
+
